@@ -1,0 +1,128 @@
+html{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+/* FOnts */
+
+@font-face{
+
+    font-family: "SF-Pro-Display-Thin";
+    src: url("fonts/SFProDisplay-Thin.ttf");
+    
+}
+
+/* FOnts */
+body{
+    min-height: 100vh;
+    background: linear-gradient(180deg, #DE4B4B 0%, #DE4B4B 0.01%, rgba(255, 138, 0, 0.84) 100%) !important;
+
+}
+.nav-link{
+    font-family: "Roboto", sans-serif !important;
+    color: #fff;
+}
+nav{
+    background: rgba(0,0,0,.2) !important;
+    padding: 0 !important;  
+}
+.navbar-brand{
+    position: relative;
+}
+.navbar-toggler img{
+    width: 50px;
+    height: 50px;
+}
+.navbar-collapse{
+    padding-left: 10px;
+}
+.navbar-brand::before{
+    content: '';
+    padding: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.dropdown-toggle::after{
+    border: none !important;
+    width: 12px;
+    height: 12px;
+    left: 0;
+    vertical-align: 0 !important;
+    margin-left: 0 !important;
+    background: url("images/Polygon\ 1.png") !important;
+}
+.navbar-brand svg{
+    position: relative;
+    box-sizing: border-box;
+    animation: animate infinite;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    5%{
+     transform: rotate(50deg);   
+    }
+    10%{
+        transform: rotate(100deg);
+    }
+    30%{
+        transform: rotate(150deg);
+    }
+    50%{
+        transform: rotate(200deg);
+    }
+    60%{
+        transform: rotate(250deg);
+    }
+    80%{
+        transform: rotate(300deg);
+    }
+    90%{
+        transform: rotate(320deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.navbar-brand span{
+    position: absolute;
+    top: 26px;
+    color: #FFF !important;
+    left: 30px;
+    right: 0;
+    bottom: 0;
+}
+.nav-link{
+    margin: 20px !important;
+    font-family: "SF-Pro-Display-Thin", sans-serif !important;
+}
+.nav-link::before{
+    content: '';
+    
+}
+.displayf{
+    margin-right: 40px;
+    display: flex;
+    justify-content: center !important;
+}
+.dropdown-menu{
+    background: linear-gradient(180deg, #DE4B4B 0%, #DE4B4B 0.01%, rgba(255, 138, 0, 0.84) 100%) !important;
+    font-family: "SF-Pro-Display-Thin", sans-serif;
+}
+.dropdown-item:hover{
+    background: rgba(0,0,0,.2) !important ;
+} 
+/* Styles unset */
+
+li{
+    list-style: none !important;
+}
+
+/* Styles unset */
